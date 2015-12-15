@@ -13,7 +13,7 @@ Package.describe({
 Package.onUse(function(api) {
   api.versionsFrom('1.2.1');
   api.use('ecmascript');
-  api.use('react');
+  api.use('react@0.14.3');
 
   api.addFiles([
     'react-simpleform.js',
