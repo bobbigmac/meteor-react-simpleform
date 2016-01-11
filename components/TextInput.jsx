@@ -4,12 +4,13 @@ SimpleForm.TextInput = React.createClass({
 			value: this.props.defaultValue
 		};
 	},
-	componentWillReceiveProps(nextProps) {
+	componentWillReceiveProps(nextProps, event) {
 		const cur = this.state && this.state.value;
 		let val = nextProps.defaultValue || '';
 		let isDirty = (this.state && this.state.isDirty);
 		let isEqual = _.isEqual(val, cur);
 
+		//console.log(event);
 		// Update the state if it's an external message, and changed
 		// TODO: Probably missing some useful event types
 		if(!isEqual && 
