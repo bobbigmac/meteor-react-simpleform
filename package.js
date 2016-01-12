@@ -1,6 +1,6 @@
 Package.describe({
   name: 'bobbigmac:react-simpleform',
-  version: '0.0.1',
+  version: '0.0.2',
   // Brief, one-line summary of the package.
   summary: 'Form input react components. Updates reactively on client and can ssr.',
   // URL to the Git repository containing the source code for this package.
